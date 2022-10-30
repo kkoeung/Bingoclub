@@ -3,6 +3,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+.body-item .menu-item2 {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+.body-item .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    color: #fff;
+}
+.body-item .closebtn:hover{
+    color: red;
+  }
+  
+  .body-item .openbtn {
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    padding: 0 15px;
+    border: none;
+  }
+  
+  .body-item .openbtn:hover {
+    background-color:#444;
+  }
 
 @media (min-width: 320px) and (max-width: 480px){
     /* header */
@@ -30,8 +64,11 @@
         margin-top: 20px;
     }
     /* menu */
-    .menu{
+    .menu .menu-item{
         display: none;
+    }
+    .menu .menu-item2{
+        display: block;
     }
     .menu-item-text{
         font-size: 9px;
@@ -160,8 +197,11 @@
         margin-top: 20px;
     }
     /* menu */
-    .menu-item-text{
-        font-size: 10px;
+    .menu .menu-item{
+        display: none;
+    }
+    .menu .menu-item2{
+        display: block;
     }
     /* tinmoi */
     .tinmoi .tinmoi-item{
