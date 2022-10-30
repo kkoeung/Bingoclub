@@ -53,8 +53,10 @@
                 <div class="body-item mt-6 w-full">
                    <div class="menu">
                         <div class="menu-content flex flex-row justify-between items-center bg-black">
-                            <div class="menu-item flex justify-between items-center">
+                            <div class="#">
                                 <a href="#"><i class="bi bi-house-fill text-white text-xl border-4 border-blue-500 rounded-full px-2 py-1 m-1"></i></a>
+                            </div>
+                            <div class="menu-item flex justify-between items-center">
                                 <a href="#" class="menu-item-text py-3 hover:bg-blue-500"><span class="px-3 border-r text-white font-semibold">SĂN CODE</span></a>
                                 <a href="#" class="menu-item-text py-3 hover:bg-blue-500"><span class="px-3 border-r text-white font-semibold">GIẢI ĐẤU</span></a>
                                 <a href="#" class="menu-item-text py-3 hover:bg-blue-500"><span class="px-3 border-r text-white font-semibold">CẨM NANG</span></a>
@@ -62,7 +64,31 @@
                                 <a href="#" class="menu-item-text py-3 hover:bg-blue-500"><span class="px-3 border-r text-white font-semibold">CLIÊN HỆ</span></a>
                                 <a href="#" class="menu-item-text py-3 hover:bg-blue-500"><span class="px-3 text-white font-semibold">TẢI GAME</span></a>
                             </div>
-                            <div class="menu-item p-3 hover:bg-blue-500">
+                            <button class="openbtn" onclick="openNav()">☰</button>
+
+                            <div id="menu" class="menu-item2 hidden flex flex-row justify-between items-center">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                                <div class="mt-6">
+                                    <a href="#" class="menu-item-text py-3 hover:bg-blue-500"><span class="px-3 text-sm text-white font-semibold">SĂN CODE</span></a>
+                                </div>
+                                <div class="mt-6">
+                                    <a href="#" class="menu-item-text py-3 hover:bg-blue-500"><span class="px-3 text-sm text-white font-semibold">GIẢI ĐẤU</span></a>
+                                </div>
+                                <div class="mt-6">
+                                    <a href="#" class="menu-item-text py-3 hover:bg-blue-500"><span class="px-3 text-sm text-white font-semibold">CẨM NANG</span></a>
+                                </div>
+                                <div class="mt-6">
+                                    <a href="#" class="menu-item-text py-3 hover:bg-blue-500"><span class="px-3 text-sm text-white font-semibold">TIN TỨ</span></a>
+                                </div>
+                                <div class="mt-6">
+                                    <a href="#" class="menu-item-text py-3 hover:bg-blue-500"><span class="px-3 text-sm text-white font-semibold">CLIÊN HỆ</span></a>
+                                </div>
+                                <div class="mt-6">
+                                    <a href="#" class="menu-item-text py-3 hover:bg-blue-500"><span class="px-3 text-sm text-white font-semibold">TẢI GAME</span></a>
+                                </div>
+                            </div>
+
+                            <div class="menu-item3 p-3 hover:bg-blue-500">
                                 <a href="#"><i class="bi bi-search text-white text-md"></i></a>
                             </div>
                         </div>
@@ -97,7 +123,7 @@
                                     </div>
                                     <div class="fish-icon-item w-5/12 ml-4">
                                         <a href="#"><img src="./images/04.png"></a>
-                                        <a href="#"><img src="./images/06.png" class="mt-5"></a>
+                                        <a href="#"><img src="./images/12.png" class="mt-5"></a>
                                     </div>
                                 </div>
                             </div>
@@ -525,5 +551,15 @@
     </section>
     <script src="../path/to/flowbite/dist/flowbite.js"></script>
     <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+
+    <script>
+        function openNav() {
+          document.getElementById("menu").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("menu").style.width = "0";
+        }
+        </script>
 </body>
 </html>
