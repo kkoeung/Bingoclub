@@ -70,6 +70,9 @@
     .menu .menu-item2{
         display: block;
     }
+    .menu .openbtn{
+        display: block;
+    }
     .menu-item-text{
         font-size: 9px;
     }
@@ -201,6 +204,9 @@
         display: none;
     }
     .menu .menu-item2{
+        display: block;
+    }
+    .menu .openbtn{
         display: block;
     }
     /* tinmoi */
